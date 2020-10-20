@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "helvetica";
+  src: url("Fonts/Helvetica.ttf");
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("Fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "montserrat bold";
+  src: url("Fonts/Montserrat-Bold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+  background-image: linear-gradient(white, white);
+  background-size: 10px 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+body {
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'montserrat';
+    font-size: 85pt;
+    margin-top: 5%;
+}
+
+.container-left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style-type: none;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.container-right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style-type: none;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.box-image-left {
+flex: 0 0 100%;
+width: 50%; 
+}
+
+.box-image-right {
+    order: 2;
+    flex: 0 0 50%;
+    width: 50%;
+    position: relative;
+}
+
+.box-text-right {
+order: 2;
+font-family: 'helvetica';
+align-items: center;
+justify-content: center;
+}
+
+.box-text-left {
+font-family: 'helvetica';
+align-items: center;
+justify-content: center;
+}
+
+
+.box-text-left, .box-date-left {
+    flex: 0 0 50%;
+    width: 50%;
+}
+
+.box-text-right, .box-date-right {
+    flex: 0 0 50%; 
+    width: 50%;
+}
+
+
+.box-text-right>h2 {
+    font-family: 'montserrat bold';
+}
+
+.box-text-left>h2 {
+    font-family: 'montserrat bold';
+}
+
+
+.box-text-right>p, .box-text-right>h2 {
+    font-size: 15px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-text-left>p, .box-text-left>h2 {
+    font-size: 15px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-date-right>span {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 175px; 
+    font-family: 'montserrat bold';
+    font-size: 55pt;
+}
+
+.box-date-left>span {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 175px;  
+    font-family: 'montserrat bold';
+    font-size: 55pt;
+}
+
+.box-date-left {
+    flex: 0 0 50%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-date-right {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+
+.line1 {
+  border-left: 10px solid white;
+  min-height: 5%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+
+
+
+ .dot {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
